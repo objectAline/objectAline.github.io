@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>qm-dev</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif;
+         max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.75; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  code { background: #8881; padding: .1em .35em; border-radius: 3px; }
+  footer { margin-top: 3rem; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>qm-dev</h1>
+<p class="sub">A personal, self-hosted assistant — single operator, no public service.</p>
+
+<p><strong>qm-dev</strong> is a private deployment of
+<a href="https://github.com/yc-software/qm">qm</a>, an open-source assistant, run by one
+individual on their own machine for their own use. It is not a product, not a service,
+and has no users other than its operator.</p>
+
+<h2>What it does</h2>
+<p>The operator chats with the assistant and asks it about their own Google data — for
+example “what is on my calendar tomorrow”, “find last week’s unread mail”, or “read this
+spreadsheet”. The assistant calls Google APIs on the operator’s behalf to answer.</p>
+
+<h2>What it asks Google for</h2>
+<ul>
+  <li><strong>Gmail</strong> — read messages and threads; create, edit, and send drafts.
+      It cannot delete or trash mail.</li>
+  <li><strong>Calendar</strong> — read and manage events.</li>
+  <li><strong>Drive</strong> — read and download files; create new files.
+      It cannot delete, rename, or move existing files.</li>
+  <li><strong>Sheets, Docs, Slides</strong> — read and edit document content.</li>
+  <li><strong>Tasks</strong> — read and manage task lists.</li>
+</ul>
+
+<p>See the <a href="privacy.html">Privacy Policy</a> for how this data is handled.</p>
+
+<footer>
+  Contact: <a href="mailto:ksin751119@gmail.com">ksin751119@gmail.com</a>
+</footer>
+</body>
+</html>
